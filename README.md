@@ -1,8 +1,8 @@
-<!-- Animated typing header -->
+<h1 align="center">Hi, I'm Dinesh Ninavath 👋</h1>
+
 <p align="center">
-  <a href="https://github.com/dinesh4567">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&center=true&vCenter=true&width=600&height=60&lines=Hi%2C+I'm+Dinesh+Ninavath+%F0%9F%91%8B;Cloud+%26+DevOps+Engineer;AWS+%7C+Azure+%7C+Kubernetes+%7C+Terraform;I+build+secure%2C+scalable+cloud+infrastructure" alt="Typing SVG" />
-  </a>
+  <b>Cloud &amp; DevOps Engineer</b><br>
+  AWS &bull; Azure &bull; Kubernetes &bull; Terraform
 </p>
 
 <p align="center">
@@ -45,74 +45,55 @@
 | **Infrastructure as Code** | Terraform |
 | **Containers** | Docker, Docker Compose |
 | **Orchestration** | Kubernetes, EKS, AKS, Helm |
-| **CI/CD** | Jenkins, GitHub Actions, Argo CD |
-| **DevSecOps** | SonarQube, Trivy, OWASP Dependency-Check |
+| **CI/CD** | Jenkins, Argo CD |
+| **DevSecOps** | SonarQube, Trivy |
 | **Monitoring** | Prometheus, Grafana |
-| **Repositories** | GitHub, Nexus, Amazon ECR, Azure Container Registry |
+| **Registries** | Amazon ECR, Azure Container Registry |
 | **Operating Systems** | Linux, Windows, WSL |
 | **Scripting** | Python, Bash |
+
+*Currently exploring: GitHub Actions, Nexus, OWASP Dependency-Check.*
 
 ---
 
 ## 🚀 Featured Projects
 
-<details open>
-  <summary><b>☁️ AWS Digital Library — Microservices on EKS</b></summary>
-  <br>
+### ☁️ [Digital Library — Microservices on AWS EKS](https://github.com/dinesh4567/AWS-Python-microservices-app)
 
-  ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonwebservices&logoColor=white)
-  ![EKS](https://img.shields.io/badge/EKS-FF9900?style=flat&logo=amazoneks&logoColor=white)
-  ![Terraform](https://img.shields.io/badge/Terraform-844FBA?style=flat&logo=terraform&logoColor=white)
-  ![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=flat&logo=jenkins&logoColor=white)
-  ![Helm](https://img.shields.io/badge/Helm-0F1689?style=flat&logo=helm&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonwebservices&logoColor=white)
+![EKS](https://img.shields.io/badge/EKS-FF9900?style=flat&logo=amazoneks&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-844FBA?style=flat&logo=terraform&logoColor=white)
+![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=flat&logo=jenkins&logoColor=white)
+![Helm](https://img.shields.io/badge/Helm-0F1689?style=flat&logo=helm&logoColor=white)
+![ArgoCD](https://img.shields.io/badge/Argo%20CD-EF7B4D?style=flat&logo=argo&logoColor=white)
 
-  Five-service Python application deployed on Amazon EKS. Infrastructure provisioned with Terraform, images published to ECR, and deployments packaged with Helm and delivered through a Jenkins pipeline.
-</details>
+Four Python Flask microservices plus a MySQL backend, deployed on Amazon EKS.
+VPC and cluster provisioned with Terraform. Jenkins pipeline runs SonarQube quality
+gates and Trivy image scans, publishes to ECR, and deploys via Helm. Argo CD keeps
+the cluster in sync from Git, with Prometheus and Grafana for monitoring.
 
-<details>
-  <summary><b>🔷 Azure Digital Library — Platform on AKS</b></summary>
-  <br>
+📐 Includes architecture diagrams and **12 labelled deployment screenshots** as proof of a working deployment.
 
-  ![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat&logo=microsoftazure&logoColor=white)
-  ![AKS](https://img.shields.io/badge/AKS-326CE5?style=flat&logo=kubernetes&logoColor=white)
-  ![ACR](https://img.shields.io/badge/ACR-0078D4?style=flat&logo=microsoftazure&logoColor=white)
+**[→ View the project](https://github.com/dinesh4567/AWS-Python-microservices-app)**
 
-  Migrated a containerized microservices application to Azure Kubernetes Service, with images stored in Azure Container Registry.
-</details>
+<br>
 
-<details>
-  <summary><b>🛡️ Java DevSecOps Pipeline</b></summary>
-  <br>
+### 🔷 [Digital Library — Platform on Azure AKS](https://github.com/dinesh4567/python-library-azure)
 
-  ![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=flat&logo=jenkins&logoColor=white)
-  ![Maven](https://img.shields.io/badge/Maven-C71A36?style=flat&logo=apachemaven&logoColor=white)
-  ![SonarQube](https://img.shields.io/badge/SonarQube-4E9BCD?style=flat&logo=sonarqube&logoColor=white)
-  ![Nexus](https://img.shields.io/badge/Nexus-1B1C30?style=flat&logo=sonatype&logoColor=white)
-  ![Trivy](https://img.shields.io/badge/Trivy-1904DA?style=flat&logo=aqua&logoColor=white)
+![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat&logo=microsoftazure&logoColor=white)
+![AKS](https://img.shields.io/badge/AKS-326CE5?style=flat&logo=kubernetes&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-844FBA?style=flat&logo=terraform&logoColor=white)
+![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=flat&logo=jenkins&logoColor=white)
 
-  Automated build, quality analysis, security scanning and artifact publishing — Maven build, SonarQube quality gate, Trivy image scan, and Nexus artifact storage.
-</details>
+The same microservices platform rebuilt on Azure — Terraform-provisioned AKS cluster,
+Kubernetes manifests, and a Jenkins pipeline. Built to compare how the equivalent
+architecture maps across two cloud providers.
 
-<details>
-  <summary><b>🐳 Docker Swarm Web Application</b></summary>
-  <br>
-
-  ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonwebservices&logoColor=white)
-  ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-  ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white)
-  ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
-
-  Deployed a replicated Java + MySQL application across a multi-node Docker Swarm cluster on AWS.
-</details>
+**[→ View the project](https://github.com/dinesh4567/python-library-azure)**
 
 ---
 
 ## 📊 GitHub Stats
-
-<p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=dinesh4567&show_icons=true&hide_border=true&count_private=true&title_color=0A66C2&icon_color=0A66C2" alt="GitHub stats" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dinesh4567&layout=compact&hide_border=true&title_color=0A66C2" alt="Top languages" />
-</p>
 
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=dinesh4567&hide_border=true&ring=0A66C2&fire=0A66C2&currStreakLabel=0A66C2" alt="GitHub streak" />
